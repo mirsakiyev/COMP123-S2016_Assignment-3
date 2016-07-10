@@ -5,8 +5,8 @@ using System.Text;
 
 namespace COMP123_S2016_Assignment_3
 {
-    public interface IHasRings
+    public interface IHabitable
     {
-        bool HasRings();
+        bool Habitable();
     }
 }

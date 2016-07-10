@@ -105,7 +105,7 @@ namespace COMP123_S2016_Assignment_3
         public override string ToString()
         {
             string returnString = "++++++++++++++++++++++++++++++++++\n";
-            returnString += "Name: "+this.Name;
+            returnString += "Name: " + this.Name;
             returnString += "Diameter: " + this.Diameter;
             returnString += "Mass: " + this.Mass;
             returnString += "++++++++++++++++++++++++++++++++++\n";
