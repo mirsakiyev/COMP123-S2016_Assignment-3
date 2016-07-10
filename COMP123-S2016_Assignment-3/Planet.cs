@@ -7,6 +7,9 @@ namespace COMP123_S2016_Assignment_3
 {
     public abstract class Planet
     {
+        //----------------------------------------------------------------------------------------------
+        //--------------------------PRIVATE INSTANCE VARIABLES------------------------------------------
+        //----------------------------------------------------------------------------------------------
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -15,11 +18,31 @@ namespace COMP123_S2016_Assignment_3
         private int _ringCount;
         private double _rotaionPeriod;
 
+        //----------------------------------------------------------------------------------------------
+        //------------------------------------CONSTRUCTORS----------------------------------------------
+        //----------------------------------------------------------------------------------------------
+
+        /**
+        * <summary>
+        * This is the constructor that takes name,diameter,mass as a parameter
+        * and set to their values       
+        * </summary>
+        * 
+        * @constructor Planet
+        * @param {string} name
+        * @param {double} diameter
+        * @param {double} mass
+       */
         public Planet(string name, double diameter, double mass)
         {
-            throw new System.NotImplementedException();
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
         }
 
+        //----------------------------------------------------------------------------------------------
+        //-----------------------------PUBLIC PROPERTIES------------------------------------------------
+        //----------------------------------------------------------------------------------------------
         public double Diameter
         {
             get
@@ -102,15 +125,16 @@ namespace COMP123_S2016_Assignment_3
             }
         }
 
+        //----------------------------------------------------------------------------------------------
+        //------------------------------PUBLIC METHODS--------------------------------------------------
+        //----------------------------------------------------------------------------------------------
         public override string ToString()
         {
-            string returnString = "++++++++++++++++++++++++++++++++++\n";
-            returnString += "Name: " + this.Name;
-            returnString += "Diameter: " + this.Diameter;
-            returnString += "Mass: " + this.Mass;
-            returnString += "++++++++++++++++++++++++++++++++++\n";
+            string returnString = "Name: " + Name + " | Diameter: " + Diameter + " | Mass :" + Mass;
+            Console.WriteLine(returnString);
 
             return returnString;
+                   
         }
     }
 }
