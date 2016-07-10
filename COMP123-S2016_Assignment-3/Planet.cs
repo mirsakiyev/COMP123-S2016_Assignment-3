@@ -17,7 +17,7 @@ namespace COMP123_S2016_Assignment_3
 
         public Planet(string name, double diameter, double mass)
         {
-            
+            throw new System.NotImplementedException();
         }
 
         public double Diameter

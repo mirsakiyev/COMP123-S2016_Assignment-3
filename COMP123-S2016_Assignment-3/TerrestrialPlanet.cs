@@ -5,18 +5,18 @@ using System.Text;
 
 namespace COMP123_S2016_Assignment_3
 {
-    public class GiantPlanet : Planet, IHasMoons, IHasRings
+    public class TerrestrialPlanet : Planet, IHasRings, IHasMoons
     {
-        private string _type;
+        private bool _oxygen;
 
-        public GiantPlanet(string name, double diameter, double mass, string type)
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
             :base(name,diameter,mass)
         {
             throw new System.NotImplementedException();
         }
 
         public bool HasMoons()
-        {
+        {           
             if (MoonCount>0)
             {
                 return true;
@@ -24,13 +24,12 @@ namespace COMP123_S2016_Assignment_3
             else
             {
                 return false;
-            }
-
+            }       
         }
 
-        public bool HasRings()
+        public bool Habitable()
         {
-            if (RingCount > 0)
+            if (this._oxygen==true)
             {
                 return true;
             }
