@@ -10,6 +10,7 @@ namespace COMP123_S2016_Assignment_3
         //----------------------------------------------------------------------------------------------
         //--------------------------PRIVATE INSTANCE VARIABLES------------------------------------------
         //----------------------------------------------------------------------------------------------
+
         private double _diameter;
         private double _mass;
         private int _moonCount;
@@ -43,6 +44,7 @@ namespace COMP123_S2016_Assignment_3
         //----------------------------------------------------------------------------------------------
         //-----------------------------PUBLIC PROPERTIES------------------------------------------------
         //----------------------------------------------------------------------------------------------
+
         public double Diameter
         {
             get
@@ -128,9 +130,18 @@ namespace COMP123_S2016_Assignment_3
         //----------------------------------------------------------------------------------------------
         //------------------------------PUBLIC METHODS--------------------------------------------------
         //----------------------------------------------------------------------------------------------
+
+        /**
+       * <summary>
+       * This method  outputs Name, Diameter and Mass to the Console
+       * </summary>
+       * 
+       * @method ToString
+       * @returns {returnString}
+      */
         public override string ToString()
         {
-            string returnString = "Name: " + Name + " | Diameter: " + Diameter + " | Mass :" + Mass;
+            string returnString = "Name: " + Name + "   |   Diameter: " + Diameter + "   |   Mass :" + Mass+"\n";          
             Console.WriteLine(returnString);
 
             return returnString;
